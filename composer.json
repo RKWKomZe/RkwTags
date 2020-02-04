@@ -1,0 +1,34 @@
+{
+    "name": "rkw/rkw-tags",
+    "type": "typo3-cms-extension",
+    "description": "Dynamic tagging based on sys_categories",
+    "homepage": "https://www.rkw-kompetenzzentrum.de",
+    "license": ["GPL-2.0+"],
+    "keywords": ["TYPO3 CMS", "RKW"],
+    "support": {
+        "email": "c.dilger@addorange.de"
+    },
+    "authors": [
+        {
+            "name": "Christian Dilger",
+            "email": "c.dilger@addorange.de",
+            "homepage": "http://www.addorange.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "ext-json": "*",
+        "typo3/cms-core": "~7.6.0 || ~8.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RKW\\RkwTags\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "rkw_tags"
+        }
+    }
+}
